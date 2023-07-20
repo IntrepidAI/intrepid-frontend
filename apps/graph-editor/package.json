@@ -1,0 +1,18 @@
+{
+  "name": "graph-editor",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && vite build",
+    "dev": "vite"
+  },
+  "dependencies": {
+    "@behave-graph/core": "*",
+    "@behave-graph/flow": "*",
+    "three": "0.152.2",
+    "three-stdlib": "^2.22.4"
+  },
+  "devDependencies": {
+    "@types/three": "0.152.1"
+  }
+}

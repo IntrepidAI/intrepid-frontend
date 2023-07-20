@@ -1,0 +1,16 @@
+{
+  "name": "exec-graph",
+  "version": "0.0.1",
+  "type": "module",
+  "bin": "./bin/cli.js",
+  "main": "./dist/index.js",
+  "source": "./src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@behave-graph/core": "*"
+  }
+}
