@@ -10,6 +10,7 @@ import { useNodeSpecJson } from '../hooks/useNodeSpecJson.js';
 import CustomControls from './Controls.js';
 import { Examples } from './modals/LoadModal.js';
 import { NodePicker } from './NodePicker.js';
+import { Sidebar } from './Sidebar.js';
 
 type FlowProps = {
   initialGraph: GraphJSON;
@@ -88,6 +89,13 @@ export const Flow: React.FC<FlowProps> = ({
       onPaneClick={handlePaneClick}
       onPaneContextMenu={handlePaneContextMenu}
     >
+      <Sidebar
+        position={{ x: 389, y: 337 }}
+        filters={nodePickFilters}
+        onPickNode={handleAddNode}
+        onClose={closeNodePicker}
+        specJSON={specJson}
+      />
       <CustomControls
         playing={playing}
         togglePlay={togglePlay}
